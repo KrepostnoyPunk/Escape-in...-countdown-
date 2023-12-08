@@ -1,5 +1,6 @@
 body{
-    background-color: #EBE3D5;
+    background-color: #31304D;
+    color: whitesmoke;
     margin: 0;
     font-family: cursive;
     display: flex;
@@ -12,6 +13,7 @@ body{
 h2{
     font-size: 60px;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .year{
@@ -20,8 +22,8 @@ h2{
 }
 
 .countdown{
+    background-color: rgba(0, 0, 0, .1);
     margin: 30px;
-    background-color: #FA7070;
     width: 100%;
     height: 120px;
     display: flex;
@@ -34,4 +36,35 @@ h2{
     font-size: 2.5em;
     font-weight: bold;
     margin-top: -25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.countdown div::before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: .35em;
+    line-height: 35px;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 35px;
+}
+
+.countdown #day::before{
+    content: 'Days';
+}
+
+.countdown #hour::before{
+    content: 'Hours';
+}
+
+.countdown #minute::before{
+    content: 'Minutes';
+}
+
+.countdown #second::before{
+    content: 'Seconds';
 }
