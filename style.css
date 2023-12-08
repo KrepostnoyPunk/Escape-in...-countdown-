@@ -1,6 +1,10 @@
 body{
-    background-color: #31304D;
-    color: whitesmoke;
+    background-image: url("anton-nazaretian-vWPrYe5HCxY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(241, 95, 120);
+    text-shadow: 0 4px 8px rgb(25,25,25);
     margin: 0;
     font-family: cursive;
     display: flex;
@@ -14,11 +18,6 @@ h2{
     font-size: 60px;
     letter-spacing: 3px;
     text-align: center;
-}
-
-.year{
-    font-size: 4em;
-    font-weight: bold;
 }
 
 .countdown{
